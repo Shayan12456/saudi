@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="tabLogo.png">
+        <title>Employee Details</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style7.css">
+        <link rel="stylesheet" href="style8.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+               @font-face {
+                 font-family: 'Tajawal', sans-serif;
+                 src: url('/Tajawal\ Regular/Tajawal.ttf') format('truetype');
+                }
+
+                 body {
+                 font-family: 'Tajawal', sans-serif;
+    }
+        </style>
+    </head>
+<body>
+    <div class="pdf" id="pdf capture">
+        <div class="upper-pdf">
+            <div class="icons">
+                <div class="left-icons">
+                    <img src="letterLogo.png" class="img-grid-2">
+                </div>
+                <div class="right-icons">
+                    <img src="companyLogo.png" class="main-logo">
+                </div>
+            </div>
+            <div class="details">
+                <div class="r1">
+                    <div class="left-row">Subscriber ID : <%=emp.sid[0]%></div>
+                    <div class="right-row"><%=emp.sid[1]%> : رقم الإشتراك</div>
+                </div>
+                <div class="r2">
+                    <div class="left-row">Subscriber Name : <%=emp.sname[0]%></div>
+                    <div class="right-row">اسم المشترك : <%=emp.sname[1]%></div>
+                </div>
+                <div class="r3">
+                    <div class="left-row">C.R : <%=emp.cr[0]%></div>
+                    <div class="right-row"><%=emp.cr[1]%> : السجل التجاري</div>
+                </div>
+                <div class="r4">
+                    <div class="left-row">Tel : <%=emp.tel[0]%> FAX : <%=emp.fax[0]%></div>
+                    <div class="right-row"><%=emp.fax[1]%> : هاتف  <%=emp.tel[1]%> : فاكس</div>
+                </div>
+                <div class="r5">
+                    <div class="left-row">Date : <%= emp.date[0] %></div>
+                    <div class="right-row"><%= emp.date[1] %>  : التاريخ</div>
+                </div>
+            </div>
+        </div>
+        <div class="letter" style="margin: 2rem auto; text-align: start; white-space: pre-wrap;"><%= emp.description %></div>
+            
+        <div class="lower-pdf">
+            <div class="lower-left">
+                <div class="row-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=emp.dc[0]%> : رمز المفوض</div>
+                <div class="row-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; الإسم : <%=emp.name[0]%> </div>
+            </div>
+            
+            <div class="lower-right">
+                <div class="left-lower-right">
+                    <div class="row-lower-1" style="width: 12rem; margin-bottom: 0.3rem;">
+                        اسم الجهة  <%=emp.noe[0]%>
+                    </div>
+                    <div class="row-lower-2" style="margin-bottom: 0.3rem;">
+                       <%=emp.on[0]%> : رقم العملية
+                    </div>
+                    <div class="row-lower-1">
+                       <%=emp.sn[0]%> : رقم الإشتراك
+                    </div>
+                </div>
+               
+                <div class="mid-lower-right">
+                    mnop
+                </div>
+       
+                <div class="right-lower-right">
+                    ikl
+                   
+                </div>  
+             </div>
+        </div>       
+
+
+        <div class="div-last">
+            <span class="upper-last" style="display: inline">
+                <p style="display: inline; width: 1rem;">هذه الوثيقة قد تم إصدارها دون أدنى مسؤولية على الغرفة من خلال نظام الخدمات الإلكترونية لاتحاد الغرف السعودية و أي إضافة أو كشط أو 
+                    </p>
+            </span>
+            <span class="lower-last" style="display: flex; justify-content: stretch; flex-direction: row-reverse;">
+                <span>تعديل على الوثيقة تعتبر لاغية وللتحقق من محتواها يرجى زيارة الموقع الالكتروني        
+                </span>
+                <span>
+                    https://user.saudichambers.sa/Home&nbsp;&nbsp;
+                </span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    text-align: rights;
+}
+
+.companyLogo {
+    width: 16rem;
+    height: 4.75rem;
+    margin-left: 58rem;
+}
+
+main {
+    display: flex;
+    /* text-align: right; */
+}
+
+.left {
+    /* margin-right: 2rem; */
+    height: 100vh;
+    padding: 2rem;
+    width: 75%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.right {
+    height: 100vh;
+    width: 25%;
+    background-color: #eaecf0;
+}
+
+input, select {
+    border: none;
+    width: 18rem;
+    height: 3.5rem;
+    padding: 1rem;
+}
+
+.ask {
+    /* margin-bottom: 2rem; */
+    margin: 2rem auto;
+    margin-right: 6rem;
+    width: 80vw;
+    background-color: #3F5FA0;
+    color: #fff;
+}
+
+.ask:hover{
+    background-color: #08885e;
+    color: white;
+}

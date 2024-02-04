@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*::selection{
+    background-color: #08885e;
+    color: white;
+}
+
+.web-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 7.5rem;
+    width: 100vw;
+}
+
+.left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 9.5px;
+}
+
+.entrance {
+    background-color: #b3b6bb;
+    color: black;
+    font-weight: 700;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0 0.5rem;
+}
+
+.entrance:hover {
+    background-color: #3F5FA0;
+    color: white;
+}
+
+.new-reg {
+    background-color: #3F5FA0 !important;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.nav-anc {
+    color: #676D79;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+}
+
+.nav-anc:hover {
+    color: #3F5FA0;
+}
+
+.nav-but:nth-of-type(1) {
+    margin-left: 2rem;
+}
+
+.right {
+    margin-right: 49.5px;
+}
+
+.main-logo {
+    width: 12rem;
+    height: 3.75rem;
+}
+
+main {
+    width: 100vw;
+    padding-right: 4rem;
+}
+
+.main-content {
+    text-align: right;
+}
+
+.upper-header {
+    width: 100vw;
+    background-color: #EEEEEF;
+    text-align: right;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-top: 1rem;
+    color: #3f5fa0;
+    text-align: right;
+}
+
+p {
+    text-align: right;
+    color: #676D79;
+    font-size: 1rem;
+}
+
+b {
+    font-weight: 700;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    direction: rtl; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.grid-item {
+    height: 10rem;
+    width: 21rem;
+    margin: 1.5rem;
+    margin-top: 6rem;
+    padding: 0 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.card {
+    background-color: #EEEEEF;
+}
+
+.footer {
+    margin-top: 7rem;
+    width: 100vw;
+    background-color: #1a1b1d;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+}
+
+.sect-3-upper {
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #676D79;
+    margin: 1rem 2rem;
+    margin-bottom: 2rem;
+}

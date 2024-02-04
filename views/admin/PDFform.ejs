@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="tabLogo.png">
+        <title>Employee Details</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style7.css">
+    </head>
+<body>
+    <header class="web-header web-header-2" style="margin-bottom: 20px;">
+        <nav class="navbar navbar-dark" style="background-color: #3F5FA0; margin-left: 3rem;
+        color: white; border: none;">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+         <div class="left" data-bs-theme="light">
+                <form action="/login" method="GET">
+                    <button class="btn btn-md entrance nav-but">دخول</button>
+                </form>
+                <form action="/register">
+                    <button class="btn btn-primary new-reg nav-but"> تسجيل جديد </button>
+                </form>
+                <a href="/contact-us" class="nav-anc">اتصل بنا</a>
+                <a href="/faq" class="nav-anc">الأسئلة الشائعة </a>
+                <a href="/usage-guides" class="nav-anc">أدلة الإستخدام</a>
+                <a href="/about" class="nav-anc">عن المنصة</a>
+                <a href="/home" class="nav-anc">الرئيسية</a>
+         </div>
+        <div class="right"><img src="companyLogo.png" alt="companyLogo" class="main-logo-1"></div>
+    </header>
+    <div
+    class="collapse "
+    id="navbarToggleExternalContent"
+    data-bs-theme="dark"
+
+    >
+    <div class="p-4" style="display: flex; flex-direction: column-reverse; text-align: right;">
+        <form action="/login" method="GET">
+            <button class="btn btn-md entrance nav-but">دخول</button>
+        </form>
+        <br>
+        <form action="/register">
+            <button class="btn btn-primary new-reg nav-but"> تسجيل جديد </button>
+        </form>
+        <a href="/contact-us" class="nav-anc">اتصل بنا</a>
+        <a href="/faq" class="nav-anc">الأسئلة الشائعة </a>
+        <a href="/usage-guides" class="nav-anc">أدلة الإستخدام</a>
+        <a href="/about" class="nav-anc">عن المنصة</a>
+        <a href="/home" class="nav-anc">الرئيسية</a>
+    </div>
+    </div>
+    <style>
+        @media (min-width: 991px) {
+            .navbar {
+                display: none;
+            }
+            .collapse {
+                display: none;
+            }
+        }
+        @media (max-width: 991px) {
+            .left {
+                display: none;
+            }
+            .collapse {
+                display: inline;
+            }
+            a {
+                margin: 0.25rem 0;
+            }
+        }
+    
+        @media (max-width: 1105pc) {
+            .main {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+    <script>
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <main class="upper-header">
+        <form action="/employee-details" method="POST">
+            <div class="r1">
+                <div class="mb-3 mr-3">
+                    <label for="s-id" class="form-label">Subscriber ID</label>
+                    <input name="sid" type="number" id="s-id" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="s-id" class="form-label">رقم الإشتراك</label>
+                    <input name="sid" type="number" id="s-id" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r2 ">
+                <div class="mb-3 mr-3">
+                    <label for="s-name" class="form-label">Subscriber Name</label>
+                    <input name="sname" type="text" id="s-name" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="s-name" class="form-label">اسم المشترك</label>
+                    <input name="sname" type="text" id="s-name" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r3">
+                <div class="mb-3 mr-3">
+                    <label for="cr" class="form-label">C.R</label>
+                    <input name="cr" type="number" id="cr" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="cr" class="form-label">السجل التجاري</label>
+                    <input name="cr" type="number" id="cr" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r4">
+                <div class="mb-3 mr-3">
+                    <label for="tel" class="form-label">Tel</label>
+                    <input name="tel" type="number" id="tel" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="tel" class="form-label">هاتف</label>
+                    <input name="tel" type="number" id="tel" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r5">
+                <div class="mb-3 mr-3">
+                    <label for="fax" class="form-label">FAX</label>
+                    <input name="fax" type="number" id="fax" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="fax" class="form-label">فاكس</label>
+                    <input name="fax" type="number" id="fax" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r6">
+                <div class="mb-3 mr-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input name="date" type="text" id="date" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="date" class="form-label">التاريخ</label>
+                    <input name="date" type="text" id="date" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r7">
+                <div class="mb-3 mr-4">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea  style="width: 1150px;" name="description"  rows="10" cols="140" class="form-control" required></textarea>  
+                </div>
+            </div>
+            <div class="r8">
+                <div class="mb-3 mr-3">
+                    <label for="dc" class="form-label">Delegate Code</label>
+                    <input name="dc" type="number" id="dc" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="dc" class="form-label">رمز المفوض</label>
+                    <input name="dc" type="number" id="dc" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r9">
+                <div class="mb-3 mr-3">
+                    <label for="noe" class="form-label">Name of the Entity</label>
+                    <input name="noe" type="text" id="noe" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="noe" class="form-label">اسم الجهة</label>
+                    <input name="noe" type="text" id="noe" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r10">
+                <div class="mb-3 mr-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input name="name" type="text" id="name" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="name" class="form-label">الإسم</label>
+                    <input name="name" type="text" id="name" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r11">
+                <div class="mb-3 mr-3">
+                    <label for="on" class="form-label">Operation Number</label>
+                    <input name="on" type="number" id="on" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="on" class="form-label">رقم العملية</label>
+                    <input name="on" type="number" id="on" class="form-control" required>    
+                </div>
+            </div>
+            <div class="r12">
+                <div class="mb-3 mr-3">
+                    <label for="sn" class="form-label">Subscription Number</label>
+                    <input name="sn" type="number" id="sn" class="form-control" required>    
+                </div>
+                <div class="mb-3 mr-3">
+                    <label for="sn" class="form-label">رقم الإشتراك</label>
+                    <input name="sn" type="number" id="sn" class="form-control" required>    
+                </div>
+            </div>
+            <button class="btn btn-danger">Submit</button>
+        </form>
+    </main>
+
+    <style>
+        footer {
+            padding-top: 1rem;
+        }
+        .f-img {
+            margin-top: 1rem;
+            margin-bottom: 7.5rem;
+            margin-right: 1rem;
+            height: 10rem; width: 16rem;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        .footer a {
+            margin-bottom: 2rem;
+            font-size: 1.25rem;
+        }
+    </style>
+    <div class="footer">
+        <div class="upper-footer">
+            <div class="sect-1-upper"><a href="">أدلة الإستخدام &lt;</a></div>
+            <div class="sect-2-upper"><a href="">الأسئلة الشائعة &lt;</a></div>
+            <div class="sect-3-upper">
+                <a href="/about">عن المنصة<</a>
+                <a href="/contact-us">تواصل معنا<</a>
+            </div>
+            <div class="sect-4-upper">
+                <img src="FSC-logo.png" class="f-img">
+            </div>
+        </div>
+        <hr style="color: #6e7178;">
+        <div class="lower-footer">
+            <div class="left-lowest">© موقع اتحاد الغرف السعودية 2023</div>
+            <div class="right-lowest">الشروط والأحكام سياسة الخصوصية</div>
+        </div>
+    </div>
+    
+    <style>
+         .footer a {
+                font-size: 0.8rem;
+                margin-left: 1.5rem;
+            }
+        @media(max-width: 1115px){
+           .upper-header {
+            height: 130vw;
+           }
+        }
+        @media(max-width: 1018px){
+           .upper-header {
+            height: 140vw;
+           }
+        }
+        @media(max-width: 945px){
+           .upper-header {
+            height: 150vw;
+           }
+        }
+        
+        @media(max-width: 904px){
+            .footer a{
+                font-size: 0.9rem;
+            }
+            .f-img {
+                height: 6rem;
+                width: 10rem;
+            }
+        }
+        @media (max-width: 880px) {
+            .upper-header {
+                /* padding-bottom: 4rem; */
+                height: 150vw;
+            }
+            input {
+                width: 1.5rem;
+            }
+        }
+        @media (max-width: 488px) {
+            .r9{
+                margin-bottom: 2rem;
+            }
+        }
+        @media (max-width: 873px) {
+            .upper-header {
+                /* padding-bottom: 4rem; */
+                height: 160vw;
+            }
+        }
+        @media (max-width: 825px) {
+            .upper-header {
+                /* padding-bottom: 4rem; */
+                height: 170vw;
+            }
+            .r7 {
+                margin-right: 64px;
+            }
+        }
+        @media(max-width: 800px){
+            .f-img {
+                height: 6rem;
+                width: 9rem;
+            }
+        }
+
+        @media(max-width: 784px){
+            .upper-header{
+                height: 190vw;
+            }
+        }
+        @media(max-width: 692px){
+            .upper-header{
+                height: 250vw;
+            }
+        }
+        @media(max-width: 547px){
+            .r12{
+                width: 65vw;
+            }
+        }
+        @media(max-width: 536px){
+            .upper-header{
+                height: 300vw;
+            }
+        }
+        @media(max-width: 487px){
+            .r11{
+                width: 68vw;
+            }
+        }
+        @media(max-width: 481px){
+            .r9{
+                width: 70vw;
+            }
+        }
+        @media(max-width: 465px){
+            .upper-header{
+                height: 500vw;
+            }
+        }
+        @media(max-width: 462px){
+            .r12{
+                width: 71vw;
+            }
+        }
+        @media(max-width: 438px){
+            .r2{
+                width: 72vw;
+            }
+            .r6 {
+                width: 65vw;
+            }
+            .r6 input {
+                width: 140px;
+            }
+        }
+        @media(max-width: 423px){
+            .upper-header{
+                height: 328vw;
+            }
+            .r12 input{
+                width: 150px;
+            }
+            .upper-header{
+                height: 600vw;
+            }
+        }
+        @media(max-width: 680px){
+            .f-img {
+                height: 5rem;
+                width: 8rem;
+                margin-right: 1rem;
+            }
+        }
+    
+        @media(max-width: 500px){
+           .footer  a {
+                font-size: 0.6rem;
+            }
+        }
+    
+        @media(max-width: 460px){
+            .footer a {
+                font-size: 0.4rem;
+                margin-left: 1rem;
+            }
+        }
+        /* @media (max-width: 1024px) and (max-height: 1366px) {
+            .footer {
+                width: 100vw;
+                background-color: #1a1b1d;
+                display: flex;
+                flex-direction: column;
+                z-index: 1;
+                position: absolute;
+                bottom: 0;
+            }
+            .upper-header {
+                height: 60vh;
+            }
+        } */
+    </style>
+    <script src="admin.js"></script>
+</body>
+</html>

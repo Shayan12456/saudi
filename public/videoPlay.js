@@ -1,0 +1,1 @@
+let videoButton = document.querySelector(".fa-circle")
